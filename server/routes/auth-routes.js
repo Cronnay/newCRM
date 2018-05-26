@@ -10,12 +10,12 @@ router.get('/google', passport.authenticate("google", {
 }));
 
 router.get('/google/redirect', passport.authenticate("google"), (req, res) => {
-  res.redirect('/auth/current_user');
+  res.redirect('/');
 });
 
 router.get('/logout', (req, res) => {
   req.logout();
-  res.send(req.user);
+  res.redirect('/');
 });
 
 router.get('/current_user', (req, res) => {
