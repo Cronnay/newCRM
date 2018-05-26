@@ -6,10 +6,10 @@ cd server
 yarn install    
 touch /server/config/secretinfo.js
 
-`export const Secret = {
-  clientID: ''
-  clientSecret: ''
-  databaseName: '',
-  databaseUser: '',
-  databasePassword: ''
-};`
+    export const Secret = {
+      clientID: ''
+      clientSecret: ''
+      databaseName: '',
+      databaseUser: '',
+      databasePassword: ''
+    };
