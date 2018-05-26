@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js --exec babel-node --presets es2015,stage-2"
+    "start": "nodemon index.js --exec babel-node --presets es2015,stage-2",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "author": "Sebastian Berglönn",
   "license": "ISC",
@@ -22,6 +24,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "concurrently": "^3.5.1",
     "nodemon": "^1.17.5"
   }
 }

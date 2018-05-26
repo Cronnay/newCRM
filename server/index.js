@@ -10,6 +10,6 @@ app.use('/auth', authRoutes);
 app.get('/', (req, res) => {
   res.render('home');
 })
-app.listen(3000, () => {
-  console.log("Listen to port 3k");
+app.listen(4000, () => {
+  console.log("Listen to port 4k woo");
 });
