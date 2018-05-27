@@ -16,3 +16,6 @@ touch /server/config/secretinfo.js
       databasePassword: String,
       cookieKey: String
     };
+
+cd ..       
+yarn run dev
